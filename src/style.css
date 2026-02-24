@@ -1,0 +1,44 @@
+/* Apple SF Pro font stack — loads natively on Apple/Chrome, Helvetica Neue fallback elsewhere */
+
+:root {
+  --accent: #e8622a;
+  --bg: #111111;
+  --text-primary: #ffffff;
+  --text-dim: #3a3a3a;
+  --text-muted: #888888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative; /* Ensure overflow-x hidden works with absolute children */
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
